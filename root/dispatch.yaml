@@ -1,0 +1,5 @@
+dispatch:
+  - url: "*/apis"
+    service: apis
+  - url: "*apis.example-api.appspot.com/*"
+    service: apis

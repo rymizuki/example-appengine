@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  root:
+    build:
+      context: ./root
+      dockerfile: Dockerfile
+    volumes:
+      - ./root:/usr/local/docker/app
+      - /usr/local/docker/app/node_modules
+    ports:
+      - 50010:3000
+    environment:
+      - PORT=3000
