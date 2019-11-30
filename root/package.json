@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "node app",
+    "build": "nuxt build",
     "test": "mocha --exit test/*.test.js"
   },
   "dependencies": {
